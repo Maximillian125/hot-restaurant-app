@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
+    <script src="https://code.jquery.com/jquery.js"></script>
   </head>
   <body>
 
@@ -23,8 +23,8 @@
           <br>
 
             <div class="text-center">
-              <button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list"></span> View Tables</button>
-              <button type="button" class="btn btn-lg btn-danger"><span class="glyphicon glyphicon-credit-card"></span> Make Reservation</button>
+              <button type="button" class="btn btn-lg btn-primary" id="viewBtn"><span class="glyphicon glyphicon-list"></span> View Tables</button>
+              <button type="button" class="btn btn-lg btn-danger" id="reservationBtn"><span class="glyphicon glyphicon-credit-card"></span> Make Reservation</button>
             </div>
         
       </div>
@@ -35,7 +35,16 @@
       </div>
     </footer>
 
-    <script type="javascript" src="main.js"></script>
+    <script type="text/javascript">
+      $("#reservationBtn").on("click", function() {
+        location.href = "file:///Users/Max/Desktop/hot-restaurant-app/makeRes.html";
+      });
+      $("#viewBtn").on("click", function() {
+        location.href = "file:///Users/Max/Desktop/hot-restaurant-app/tables.html";
+      });
+
+      
+    </script>
 
   </body>
 

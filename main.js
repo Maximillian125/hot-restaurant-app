@@ -33,7 +33,7 @@ app.get("/", function(req, res) {
 });
 
 app.get("/reserve", function(req, res) {
-  res.sendFile(path.join(__dirname, "reserve.html"));
+  res.sendFile(path.join(__dirname, "makeRes.html"));
 });
 
 // Get all characters
